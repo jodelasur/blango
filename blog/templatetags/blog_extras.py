@@ -17,7 +17,7 @@ def author_details(author, current_user=None):
     return ""
 
   if author == current_user:
-    return format_html("<strong>me</string>")
+    return format_html("<strong>me</strong>")
 
   if author.first_name and author.last_name:
     name = f"{author.first_name} {author.last_name}"
